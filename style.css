@@ -47,10 +47,18 @@ section > p{
 
 
 section.imagem{
-    padding: 5px;
-    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
-    
+}
+
+@media (max-width: 768px){
+
+    section.imagem{
+        background-attachment: scroll;
+        background-position: center top;
+    }
+
 }
 
 section.imagem > p{
